@@ -1,22 +1,20 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/JUnit5TestClass.java to edit this template
- */
+
 package segundoparcial_ing_grupo18;
 
 import java.time.LocalDate;
 import java.time.Month;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+import static junit.framework.Assert.assertEquals;
+import static junit.framework.Assert.assertNotNull;
+import static junit.framework.Assert.assertNotSame;
+import static junit.framework.Assert.assertSame;
+import org.junit.Before;
+import org.junit.After;
+import org.junit.BeforeClass;
+import org.junit.AfterClass;
+import org.junit.Test;
 
-/**
- *
- * @author Matias
- */
+
+
 public class CuentaTest {
     
     private Cuenta micuenta;
@@ -33,7 +31,7 @@ public class CuentaTest {
     }
 
     @Before
-    public void setUp() {
+    public void setUp() {   
         micuenta = new Cuenta("123", 2000.0);
         c3 = new Cuenta("789", 2000.0);
     }
@@ -63,7 +61,7 @@ public class CuentaTest {
 
     @Test
     public void testTransferirCuentaNoNula() throws Exception {
-        cuenta c2 = new Cuenta("456", 5000.0);
+        Cuenta c2 = new Cuenta("456", 5000.0);
         assertNotNull(c2);
         micuenta.transferirDinero(c2, 1000.0);
     }

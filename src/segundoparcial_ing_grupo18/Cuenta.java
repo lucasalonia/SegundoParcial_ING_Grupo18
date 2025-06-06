@@ -1,13 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package segundoparcial_ing_grupo18;
 
-/**
- *
- * @author Matias
- */
+
 public class Cuenta {
     private String id;
     private double saldo;
