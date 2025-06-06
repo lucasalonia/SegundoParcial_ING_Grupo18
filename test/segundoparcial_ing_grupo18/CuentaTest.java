@@ -68,21 +68,21 @@ public class CuentaTest {
 
     @Test
     public void testCuentasDiferentes() {
-        assertNotSame("SON la MISMA cuenta!! origen y destino", micuenta, micuenta); // esto DEBE FALLAR
+        assertNotSame("Son la misma cuenta!! origen y destino", micuenta, micuenta); 
     }
 
     @Test
     public void testCuentasIguales() {
-        assertSame("Las cuentas son diferentes---", micuenta, c3); // esto DEBE FALLAR
+        assertSame("Las cuentas son diferentes:", micuenta, c3); 
     }
 
     @Test(timeout = 60)
     public void testOperacionTildada1() throws InterruptedException {
-        micuenta.OperacionTildada(40); // debe ÉXITO
+        micuenta.OperacionTildada(40); 
     }
 
     @Test(timeout = 60)
     public void testOperacionTildada2() throws InterruptedException {
-        micuenta.OperacionTildada(70); // debe lanzar TIMEOUT
+        micuenta.OperacionTildada(70);
     }
 }

@@ -10,6 +10,11 @@ public class Cuenta {
         this.id = id;
         this.saldo = saldoInicial;
     }
+    
+    public Cuenta(double saldoInicial) {
+       
+        this.saldo = saldoInicial;
+    }
 
     public String getId() {
         return id;
